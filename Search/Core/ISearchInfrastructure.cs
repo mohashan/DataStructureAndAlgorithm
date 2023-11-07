@@ -1,7 +1,8 @@
 ﻿namespace Core
 {
-    public interface ISearchInfrastructure
-    {
-        public int DoSearch(int[] List, int Key, int Start, int End);
+    public interface ISearch
+    { 
+        public int LinearSearch(int[] List, int Key);
+        public List<int> HashTableSearch(int[] List, int Key);
     }
 }

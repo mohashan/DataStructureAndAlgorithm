@@ -1,13 +1,12 @@
-﻿using Core;
-
+﻿
 namespace LinearSearch
 {
-    public class Search : ISearchInfrastructure
+    public class Search
     {
 
-        public int DoSearch(int[] List, int Key, int Start, int End)
+        public int DoSearch(int[] List, int Key)
         {
-            for (int i = Start; i < End; i++)
+            for (int i = 0; i < List.Length; i++)
             {
                 if (List[i] == Key)
                     return i;
