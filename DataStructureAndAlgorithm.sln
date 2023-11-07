@@ -5,23 +5,47 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{7DF3CC8C-05A5-45FB-A52B-0A73F307859F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearSearch", "Search\LinearSearch\LinearSearch.csproj", "{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "Search\Search\Search.csproj", "{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD} = {CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}
+		{F399C7F9-89AD-443E-82E2-352C27D682D1} = {F399C7F9-89AD-443E-82E2-352C27D682D1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearSearch", "Search\LinearSearch\LinearSearch\LinearSearch.csproj", "{F399C7F9-89AD-443E-82E2-352C27D682D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD} = {CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Search\Core\Core.csproj", "{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F399C7F9-89AD-443E-82E2-352C27D682D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F399C7F9-89AD-443E-82E2-352C27D682D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F399C7F9-89AD-443E-82E2-352C27D682D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F399C7F9-89AD-443E-82E2-352C27D682D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6F876CC9-6BDB-4BF4-843E-EFF005D40F5A} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
+		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
+		{F399C7F9-89AD-443E-82E2-352C27D682D1} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
+		{CFDC07DA-62D1-4E89-AFC8-8076B5C47AAD} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5E7416A-0C7C-45DE-B50A-1CA2AABE3631}
 	EndGlobalSection
 EndGlobal
