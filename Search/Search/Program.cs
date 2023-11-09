@@ -8,6 +8,7 @@ int searchForNotExist = 2;
 int searchForDuplicate = 12;
 var linearSearch = new LinearSearch.Search();
 var hashTableSearch = new HashTable.Search();
+var binarySearch = new BinarySearch.Search();
 
 Console.WriteLine($"Linear Search for {searchForExist} in the list (Exist), Result : {linearSearch.DoSearch(list,searchForExist)}");
 Console.WriteLine($"Linear Search for {searchForNotExist} in the list (Not Exist), Result : {linearSearch.DoSearch(list,searchForNotExist)}");
@@ -18,6 +19,12 @@ Console.WriteLine();
 Console.WriteLine($"HashTable Search for {searchForExist} in the list (Exist), Result : {hashTableSearch.DoSearch(list, searchForExist).IntList2String()}");
 Console.WriteLine($"HashTable Search for {searchForNotExist} in the list (Not Exist), Result : {hashTableSearch.DoSearch(list, searchForNotExist).IntList2String()}");
 Console.WriteLine($"HashTable Search for {searchForDuplicate} in the list (Duplicate), Result : {hashTableSearch.DoSearch(list, searchForDuplicate).IntList2String()}");
+
+Console.WriteLine();
+var sortedList = list.Order().ToArray();
+Console.WriteLine($"Binary Search for {searchForExist} in the list (Exist), Result : {binarySearch.DoSearch(sortedList, searchForExist,0,sortedList.Length)}");
+Console.WriteLine($"Binary Search for {searchForNotExist} in the list (Not Exist), Result : {binarySearch.DoSearch(sortedList, searchForNotExist, 0, sortedList.Length)}");
+Console.WriteLine($"Binary Search for {searchForDuplicate} in the list (Duplicate), Result : {binarySearch.DoSearch(sortedList, searchForDuplicate, 0, sortedList.Length)}");
 
 
 Console.ReadLine();

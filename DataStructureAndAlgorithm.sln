@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearSearch", "Search\Line
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "Search\HashTable\HashTable\HashTable.csproj", "{B6A1579E-AD90-4F5D-B883-76F6F45B0B9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "Search\BinarySearch\BinarySearch.csproj", "{FF54A28F-9948-4D31-BB83-06BA05D4F287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{B6A1579E-AD90-4F5D-B883-76F6F45B0B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A1579E-AD90-4F5D-B883-76F6F45B0B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A1579E-AD90-4F5D-B883-76F6F45B0B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF54A28F-9948-4D31-BB83-06BA05D4F287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF54A28F-9948-4D31-BB83-06BA05D4F287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF54A28F-9948-4D31-BB83-06BA05D4F287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF54A28F-9948-4D31-BB83-06BA05D4F287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 		{5AF6DC88-8541-4DC4-ABAB-9222CACFA0B4} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
 		{F399C7F9-89AD-443E-82E2-352C27D682D1} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
 		{B6A1579E-AD90-4F5D-B883-76F6F45B0B9C} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
+		{FF54A28F-9948-4D31-BB83-06BA05D4F287} = {7DF3CC8C-05A5-45FB-A52B-0A73F307859F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5E7416A-0C7C-45DE-B50A-1CA2AABE3631}
