@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BinarySearch\BinarySearch.csproj" />
-    <ProjectReference Include="..\HashTable\HashTable\HashTable.csproj" />
-    <ProjectReference Include="..\LinearSearch\LinearSearch\LinearSearch.csproj" />
-  </ItemGroup>
-
 </Project>
