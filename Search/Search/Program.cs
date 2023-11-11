@@ -13,6 +13,7 @@ var ternarySearch = new TernarySearch();
 var jumpSearch = new JumpSearch();
 var exponentialSearch = new ExponentialSearch();
 var fibonacciSearch = new FibonacciSearch();
+var interpolationSearch = new InterpolationSearch();
 Console.WriteLine($"Linear Search for {searchForExist} in the list (Exist), Result : {linearSearch.DoSearch(list,searchForExist,0,list.Length)}");
 Console.WriteLine($"Linear Search for {searchForNotExist} in the list (Not Exist), Result : {linearSearch.DoSearch(list,searchForNotExist, 0, list.Length)}");
 Console.WriteLine($"Linear Search for {searchForDuplicate} in the list (Duplicate), Result : {linearSearch.DoSearch(list, searchForDuplicate, 0, list.Length)}");
@@ -54,5 +55,10 @@ Console.WriteLine($"Fibonacci Search for {searchForExist} in the list (Exist), R
 Console.WriteLine($"Fibonacci Search for {searchForNotExist} in the list (Not Exist), Result : {fibonacciSearch.DoSearch(sortedList, searchForNotExist, 0, sortedList.Length - 1)}");
 Console.WriteLine($"Fibonacci Search for {searchForDuplicate} in the list (Duplicate), Result : {fibonacciSearch.DoSearch(sortedList, searchForDuplicate, 0, sortedList.Length - 1)}");
 
+Console.WriteLine();
+
+Console.WriteLine($"Interpolation Search for {searchForExist} in the list (Exist), Result : {interpolationSearch.DoSearch(sortedList, searchForExist, 0, sortedList.Length - 1)}");
+Console.WriteLine($"Interpolation Search for {searchForNotExist} in the list (Not Exist), Result : {interpolationSearch.DoSearch(sortedList, searchForNotExist, 0, sortedList.Length - 1)}");
+Console.WriteLine($"Interpolation Search for {searchForDuplicate} in the list (Duplicate), Result : {interpolationSearch.DoSearch(sortedList, searchForDuplicate, 0, sortedList.Length - 1)}");
 
 Console.ReadLine();
