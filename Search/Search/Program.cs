@@ -20,9 +20,9 @@ Console.WriteLine($"Linear Search for {searchForDuplicate} in the list (Duplicat
 
 Console.WriteLine();
 
-Console.WriteLine($"HashTable Search for {searchForExist} in the list (Exist), Result : {hashTableSearch.DoSearch(list, searchForExist).IntList2String()}");
-Console.WriteLine($"HashTable Search for {searchForNotExist} in the list (Not Exist), Result : {hashTableSearch.DoSearch(list, searchForNotExist).IntList2String()}");
-Console.WriteLine($"HashTable Search for {searchForDuplicate} in the list (Duplicate), Result : {hashTableSearch.DoSearch(list, searchForDuplicate).IntList2String()}");
+Console.WriteLine($"HashTable Search for {searchForExist} in the list (Exist), Result : {hashTableSearch.DoSearch(list, searchForExist).ToArray().IntArray2String()}");
+Console.WriteLine($"HashTable Search for {searchForNotExist} in the list (Not Exist), Result : {hashTableSearch.DoSearch(list, searchForNotExist).ToArray().IntArray2String()}");
+Console.WriteLine($"HashTable Search for {searchForDuplicate} in the list (Duplicate), Result : {hashTableSearch.DoSearch(list, searchForDuplicate).ToArray().IntArray2String()}");
 
 Console.WriteLine();
 var sortedList = list.Order().ToArray();

@@ -38,7 +38,7 @@ public class QuickSort
             if (LeftIndex > RightIndex)
             {
                 if(LeftIndex != pivotIndex)
-                    Swap(List, LeftIndex, pivotIndex);
+                    List.Swap(LeftIndex, pivotIndex);
 
                 var part1 = DoSort(List[..LeftIndex]);
                 var part2 = DoSort(List[(LeftIndex + 1)..]);
@@ -48,7 +48,7 @@ public class QuickSort
             {
                 if (List[LeftIndex] != List[RightIndex])
                 {
-                    Swap(List,LeftIndex,RightIndex);
+                    List.Swap(LeftIndex,RightIndex);
                 }
                 LeftTargeted = false;
                 RightTargeted = false;
@@ -56,11 +56,5 @@ public class QuickSort
         } 
     }
 
-    private int[] Swap(int[] List,int Index1,int Index2)
-    {
-        int swap = List[Index1];
-        List[Index1] = List[Index2];
-        List[Index2] = swap;
-        return List;
-    }
+    
 }
