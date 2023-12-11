@@ -5,6 +5,7 @@ var selectionSort = new SelectionSort();
 var quickSort = new QuickSort();
 var mergeSort = new MergeSort();
 var heapSort = new HeapSort();
+var radixSort = new RadixSort();
 
 int[] list = { 23, 12, 48, 1, 25, 14, 56, 19, 12, 41, 31, 28 };
 
@@ -18,5 +19,6 @@ Console.WriteLine($"Quick Sort : {quickSort.DoSort(list.OrderBy(c => Guid.NewGui
 Console.WriteLine($"Merge Sort : {mergeSort.DoSort(list.OrderBy(c => Guid.NewGuid()).ToArray()).IntArray2String()}");
 
 Console.WriteLine($"Heap Sort : {heapSort.DoSort(list.OrderBy(c=>Guid.NewGuid()).ToArray()).IntArray2String()}");
+Console.WriteLine($"Radix Sort : {radixSort.DoSort(list.OrderBy(c=>Guid.NewGuid()).ToArray()).IntArray2String()}");
 
 Console.ReadLine();

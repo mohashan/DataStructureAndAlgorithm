@@ -10,12 +10,10 @@ public class HeapSort
 {
     public int[] DoSort(int[] List)
     {
-        List<int> result = new List<int>();
         for (int i = List.Length; i > 1 ; i--)
         {
             List = Heaping(List[..i]).Concat(List[i..]).ToArray();
             List.Swap(0, i - 1);
-            //result.Add(List[0]);
         }
         return List;
     }
